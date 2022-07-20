@@ -38,7 +38,7 @@ export default class App extends Component{
 
   somar = () => {
     this.setState({
-      numero: this.state.numero + 1 
+      numero: this.state.numero + 1
     })
   }
 
