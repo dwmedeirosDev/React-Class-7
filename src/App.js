@@ -37,15 +37,19 @@ export default class App extends Component{
   }
 
   somar = () => {
-    this.setState({
-      numero: this.state.numero + 1
-    })
+    if(this.state.numero <= 9){
+      this.setState({
+        numero: this.state.numero + 1
+      })
+    }
   }
 
   subtrair = () => {
-    this.setState({
-      numero: this.state.numero - 1 
-    })
+    if(this.state.numero >= -9){
+      this.setState({
+        numero: this.state.numero - 1 
+      })
+    }
   }
 
   render(){
